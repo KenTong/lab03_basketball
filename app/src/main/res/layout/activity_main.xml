@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="#512DA8"
+    >
 
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/L1"
@@ -17,15 +19,22 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.opro.ken.lab03_basketball.MainActivity"
         >
-
+<ImageView
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:src="@drawable/texas_rangers"
+        android:layout_gravity="center"
+    />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="遊騎兵"
-            android:textSize="32sp" />
+            android:textSize="32sp"
+            android:textColor="#FFFFFF"/>
         <TextView
+            android:textColor="#FFFFFF"
             android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -36,28 +45,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:background="#5C6BC0"
             android:onClick="athreePoint"
             android:text="+3"
-            android:textColor="#FFFFFF"
             android:textSize="20sp" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:background="#5C6BC0"
             android:onClick="atwoPoint"
             android:text="+2"
-            android:textColor="#FFFFFF"
             android:textSize="20sp" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:background="#5C6BC0"
             android:onClick="aonePoint"
             android:text="+1"
-            android:textColor="#FFFFFF"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -73,15 +76,24 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.opro.ken.lab03_basketball.MainActivity"
         >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/twins"
+            android:layout_gravity="center"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="雙城"
-            android:textSize="32sp" />
+            android:textSize="32sp"
+            android:textColor="#FFFFFF"/>
         <TextView
             android:id="@+id/tv2"
+            android:textColor="#FFFFFF"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -91,34 +103,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:background="#5C6BC0"
             android:onClick="bthreePoint"
             android:text="+3"
-            android:textColor="#FFFFFF"
             android:textSize="20sp" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:background="#5C6BC0"
             android:onClick="btwoPoint"
             android:text="+2"
-            android:textColor="#FFFFFF"
             android:textSize="20sp" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:background="#5C6BC0"
             android:onClick="bonePoint"
             android:text="+1"
-            android:textColor="#FFFFFF"
             android:textSize="20sp" />
     </LinearLayout>
 
     <ImageView
         android:layout_width="2dp"
-        android:layout_height="380dp"
+        android:layout_height="420dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_toRightOf="@id/L1"
@@ -129,10 +135,11 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="18dp"
-        android:background="#5C6BC0"
         android:gravity="center"
         android:onClick="reset"
         android:text="重置"
         android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:color/holo_red_dark"
+        />
 </RelativeLayout>
