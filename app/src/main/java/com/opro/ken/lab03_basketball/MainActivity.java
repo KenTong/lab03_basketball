@@ -28,10 +28,6 @@ public class MainActivity extends AppCompatActivity {
         asetTotal();
     }
 
-    private void asetTotal() {
-        TextView tv1 = (TextView) findViewById(R.id.tv1);
-        tv1.setText(String.valueOf(atotal));
-    }
     public void bthreePoint(View view) {
         btotal += 3;
         bsetTotal();
@@ -44,16 +40,23 @@ public class MainActivity extends AppCompatActivity {
         ++btotal;
         bsetTotal();
     }
+
     public void reset(View view) {
         atotal=0;
         btotal=0;
         asetTotal();
         bsetTotal();
     }
+
+    private void asetTotal() {
+        TextView tv1 = (TextView) findViewById(R.id.tv1);
+        tv1.setText(String.valueOf(atotal));
+    }
     private void bsetTotal() {
         TextView tv2 = (TextView) findViewById(R.id.tv2);
         tv2.setText(String.valueOf(btotal));
     }
+
     public void Point(View view){
 
         switch (view.getId()){

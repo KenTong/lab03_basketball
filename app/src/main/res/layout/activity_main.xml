@@ -5,127 +5,32 @@
     android:orientation="horizontal"
     android:background="#512DA8"
     >
-
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/L1"
-        android:layout_width="190dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_weight="1"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.opro.ken.lab03_basketball.MainActivity"
-        >
-<ImageView
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:src="@drawable/texas_rangers"
-        android:layout_gravity="center"
-    />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="遊騎兵"
-            android:textSize="32sp"
-            android:textColor="#FFFFFF"/>
-        <TextView
-            android:textColor="#FFFFFF"
-            android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text="0"
-            android:textSize="35sp" />
-        <Button
-            android:id="@+id/b1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="18dp"
-            android:onClick="Point"
-            android:text="+3"
-            android:textSize="20sp" />
-        <Button
-            android:id="@+id/b2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="18dp"
-            android:onClick="Point"
-            android:text="+2"
-            android:textSize="20sp" />
-        <Button
-            android:id="@+id/b3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="18dp"
-            android:onClick="Point"
-            android:text="+1"
-            android:textSize="20sp" />
-    </LinearLayout>
+        tools:context="com.opro.ken.lab03_basketball.MainActivity">
 
-    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/L1"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.opro.ken.lab03_basketball.MainActivity"
-        >
+        <fragment android:name="com.opro.ken.lab03_basketball.point_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            tools:layout="@layout/fragment_point_counter2" />
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:src="@drawable/twins"
-            android:layout_gravity="center"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="雙城"
-            android:textSize="32sp"
-            android:textColor="#FFFFFF"/>
-        <TextView
-            android:id="@+id/tv2"
-            android:textColor="#FFFFFF"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:text="0"
-            android:textSize="35sp" />
-        <Button
-            android:id="@+id/b4"
+        <fragment android:name="layout.twins"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="18dp"
-            android:onClick="Point"
-            android:text="+3"
-            android:textSize="20sp" />
-        <Button
-            android:id="@+id/b5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="18dp"
-            android:onClick="Point"
-            android:text="+2"
-            android:textSize="20sp" />
-        <Button
-            android:id="@+id/b6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="18dp"
-            android:onClick="Point"
-            android:text="+1"
-            android:textSize="20sp" />
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            tools:layout="@layout/fragment_twins" />
     </LinearLayout>
 
     <ImageView
@@ -133,7 +38,6 @@
         android:layout_height="420dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@id/L1"
         android:background="@android:color/darker_gray" />
     <Button
         android:id="@+id/b7"
