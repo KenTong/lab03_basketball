@@ -42,24 +42,27 @@
             android:text="0"
             android:textSize="35sp" />
         <Button
+            android:id="@+id/b1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:onClick="athreePoint"
+            android:onClick="Point"
             android:text="+3"
             android:textSize="20sp" />
         <Button
+            android:id="@+id/b2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:onClick="atwoPoint"
+            android:onClick="Point"
             android:text="+2"
             android:textSize="20sp" />
         <Button
+            android:id="@+id/b3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:onClick="aonePoint"
+            android:onClick="Point"
             android:text="+1"
             android:textSize="20sp" />
     </LinearLayout>
@@ -100,24 +103,27 @@
             android:text="0"
             android:textSize="35sp" />
         <Button
+            android:id="@+id/b4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:onClick="bthreePoint"
+            android:onClick="Point"
             android:text="+3"
             android:textSize="20sp" />
         <Button
+            android:id="@+id/b5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:onClick="btwoPoint"
+            android:onClick="Point"
             android:text="+2"
             android:textSize="20sp" />
         <Button
+            android:id="@+id/b6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="18dp"
-            android:onClick="bonePoint"
+            android:onClick="Point"
             android:text="+1"
             android:textSize="20sp" />
     </LinearLayout>
@@ -130,13 +136,14 @@
         android:layout_toRightOf="@id/L1"
         android:background="@android:color/darker_gray" />
     <Button
+        android:id="@+id/b7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_margin="18dp"
         android:gravity="center"
-        android:onClick="reset"
+        android:onClick="Point"
         android:text="重置"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
